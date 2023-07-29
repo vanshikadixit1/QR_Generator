@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanshika QR Generator</title>
+    <meta property="og:title" content="Seromitschu QR Code Generator."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="/assets/img/websiteScreenShot.png"/>
+    <meta property="og:url" content="https://s10qr.vercel.app"/>
+    <meta name="theme-color" content="#f9fafb">
+    <link rel='icon' type='image/png' href='/assets/img/iconWhite.png'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+        ntegrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel='stylesheet' href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        window.onload = function () {
+            twemoji.parse(document.body,
+                { folder: 'svg', ext: '.svg' }
+            );
+        }
+    </script>
+    <style>
+        img.emoji {
+            width: 1em;
+            pointer-events: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body class="container max-w-6xl mx-auto animate__animated animate__fadeIn js">
+
+    <section id="nav">
+        <div class="mt-3">
+            <div class="navGrid">
+                <div class="navGridItem">
+                    <a href="/" class="navbar-brand navbar-brand-text"><img id="navbarImage" draggable="false"
+                            src="iconWhite.png" alt="IMG" width="55"></a>
+                </div>
+                <div class="navGridItem navGridItemRight">
+                    <button id="switchModeButton" class="navbarButton switchModeButton smallText">
+                        <i class='fa-solid fa-sun-bright opacity-90'></i>
+                    </button>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </section>
+
+    <section id="head" class="wrapperSection">
+        <div class="wrapper">
+          <header>
+            <h1>QR Code Generator</h1>
+            <p>Paste a url or enter text to create QR code.</p>
+          </header>
+          <div class="qr-code">
+            <br>
+          <a download>
+            <img style="float: right;" src="" alt="qr-code"></img>
+            </a>
+          </div>
+          <div class="form">
+            <input type="text" spellcheck="false" placeholder="Enter text or url">
+            <button>Generate QR Code</button>
+          </div>
+          <br>
+          <p id="info"></p>
+        </div>
+      </section>
+
+    <section id="footer">
+        <div class="footer section">
+            <div class="footerLeft">
+                <span id="version" class="smallText textCard rounded-custom mr-1 opacity-80">Qr Code Generator</span>
+                <span class="smallText opacity-80">By <a href="https://github.com/vanshikadixit1">Vanshika</a></span>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="goTop" class="smallText transition-shadow">
+        <i class="fa-regular fa-chevron-up opacity-90"></i>
+    </button>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src='js/goTop.js'></script>
+<script src="darkMode.js"></script>
+<script src="qr.js"></script>
+
+</html>

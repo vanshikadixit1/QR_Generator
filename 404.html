@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seromitschu Error</title>
+    <meta property="og:title" content="Seromitschu QR Code Generator."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="/assets/img/websiteScreenShot.png"/>
+    <meta property="og:url" content="https://s10qr.vercel.app"/>
+    <meta name="theme-color" content="#f9fafb">
+    <link rel='icon' type='image/png' href='/assets/img/iconWhite.png'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+        ntegrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel='stylesheet' href="/assets/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function () {
+            twemoji.parse(document.body,
+                { folder: 'svg', ext: '.svg' }
+            );
+        }
+    </script>
+    <style>
+        img.emoji {
+            width: 1em;
+            pointer-events: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body class="container max-w-6xl mx-auto animate__animated animate__fadeIn js">
+
+    <section id="nav">
+        <div class="mt-3">
+            <div class="navGrid">
+                <div class="navGridItem">
+                    <a href="/" class="navbar-brand navbar-brand-text"><img id="navbarImage" draggable="false"
+                            src="/assets/img/iconWhite.png" alt="IMG" width="55"><span class="blogHead">ERROR</span></a>
+                </div>
+                <div class="navGridItem navGridItemRight">
+                    <button id="switchModeButton" class="navbarButton switchModeButton smallText">
+                        <i class='fa-solid fa-sun-bright opacity-90'></i>
+                    </button>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="blogTextBox">
+            <br>
+            <h1 style="margin-top: 0px;" class="blackText mt-2"><span class="coloredText">404</span> Page Not Found.</h1>
+            <div id="centeredButton" class="mt-1">
+                <a href="https://github.com/seromitschu?utm_source=serhat" target="_blank"
+                    class="bigButton smallText rounded-custom mr-2"><span
+                        class="p-3 opacity-90"><i
+                        class="fa-brands fa-github"></i></span></a>
+                <a href="https://discord.gg/ABKStH94NB?utm_source=serhat" target="_blank"
+                    class="bigButton smallText rounded-custom mr-2"><span class="p-3 opacity-90"><i
+                            class="fa-brands fa-discord"></i></span></a>
+                <a href="https://open.spotify.com/user/dpzbuw7zcqedqxsq6q43z465l?si=e032abd0d6d341eb?utm_source=serhat" target="_blank"
+                    class="bigButton smallText rounded-custom mr-2"><span class="p-3 opacity-90"><i
+                    class="fa-brands fa-spotify"></i></span></a>
+                <a href="https://steamcommunity.com/id/seromitschu?utm_source=serhat" target="_blank"
+                    class="bigButton smallText rounded-custom mr-2"><span class="p-3 opacity-90"><i 
+                    class="fa-brands fa-steam"></i></span></a>
+                <br>
+                <br>
+                <br>
+                <p class="smallText opacity-80">The page you are looking for might have been removed had its name changed or is temporarily unavailable. You can back to homepage!</p>
+                <br>
+                <br>
+                <a href="index.html"
+                class="bigButton smallText rounded-custom mr-2"><span class="p-3 opacity-90"><i class="fa-regular fa-arrow-up-right-from-square"></i>
+                Back To Homepage</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer section">
+            <div class="footerLeft">
+                <span id="version" class="smallText textCard rounded-custom mr-1 opacity-80">QR Code Generator</span>
+                <span class="smallText opacity-80">Serhat</span>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="goTop" class="smallText transition-shadow">
+        <i class="fa-regular fa-chevron-up opacity-90"></i>
+    </button>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src='/assets/js/goTop.js'></script>
+<script src="/assets/js/darkMode.js"></script>
+
+</html>

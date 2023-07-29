@@ -1,0 +1,473 @@
+@import"https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
+
+/*
+
+Red Rose
+
+*/
+
+:root {
+    --primary-background-color: #f9fafb;
+    --secondary-background-color: #c5c5c9;
+    --tertiary-background-color: #b4b4b6;
+    --fff-background-color: #e5e5e5;
+    --text-color: #181919;
+    --image-invert: 100%;
+    color-scheme: light
+}
+
+.dark-theme {
+    --primary-background-color: #000000;
+    --secondary-background-color: #181818;
+    --tertiary-background-color: #121213;
+    --fff-background-color: #141414;
+    --text-color: #e4e4e4;
+    --image-invert: 0%;
+    color-scheme: dark
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: var(--primary-background-color);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--secondary-background-color); 
+}
+
+::selection {
+    background-color: transparent;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+button:focus {
+    outline: none
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: "Inter";
+    transition: all 0.1s linear;
+    background-color: var(--primary-background-color)
+}
+
+img {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+a:hover {
+    text-decoration: none;
+    color: unset !important
+}
+
+.naturalLink:hover {
+    text-decoration: underline
+}
+
+@media only screen and (min-width: 640px) {
+
+    .wrapper{
+        height: 600px;
+        width: 350px;
+        background: var(--secondary-background-color);
+        border-radius: 15px;
+        padding: 20px 25px 0;
+        transition: height 0.2s ease;
+      }
+       
+    .wrapper.active{
+        width: 350px;
+    }
+
+    #head {
+        padding-top: 5em
+    }
+
+    .section {
+        padding-top: 5em;
+        padding-bottom: 5em
+    }
+
+    .sectionGrid {
+        display: grid;
+        grid-template-columns: auto auto
+    }
+
+    .sectionGridItemRight {
+        justify-self: end
+    }
+
+    .blackText {
+        font-size: 55px;
+    }
+
+    .footerLeft {
+        float: left
+    }
+
+    .footerRight {
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .wrapper{
+        height: 600px;
+        width: 350px;
+        background: var(--secondary-background-color);
+        border-radius: 15px;
+        padding: 20px 25px 0;
+        transition: height 0.2s ease;
+      }
+       
+    .wrapper.active{
+        width: 350px;
+    }
+
+    #head {
+        padding-top: 4em
+    }
+
+    .section {
+        padding-top: 4em;
+        padding-bottom: 4em
+    }
+
+    .sectionGridItemRight {
+        padding-top: 1em
+    }
+
+    .blackText {
+        font-size: 40px;
+        float: center;
+        text-align: center
+    }
+
+    .footer {
+        text-align: center;
+        float: center
+    }
+
+    #centeredButton {
+        text-align: center
+    }
+
+    #headAvatar {
+        margin-top: 2rem
+    }
+}
+
+.blackText {
+    color: var(--text-color);
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+.boldText {
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 500
+}
+
+.normalText {
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: normal
+}
+
+.smallText {
+    color: var(--text-color);
+    font-size: 15.5px;
+    font-weight: normal
+}
+
+.thinText {
+    color: var(--text-color);
+    font-size: 13px;
+    font-weight: normal
+}
+
+.coloredText {
+    background-image: linear-gradient(to right, #d3162f, #c51212);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 100vh
+}
+
+.coloredText-Blog {
+    background-image: linear-gradient(to right, #d3162f, #c51212);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#goTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    outline: none;
+    cursor: pointer;
+    border-radius: 999%;
+    font-size: 18px;
+    transform: scale(1);
+    width: 45px;
+    height: 45px;
+    color: var(--text-color);
+    background: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color)
+}
+
+#goTop:hover {
+    background: var(--tertiary-background-color)
+}
+
+.navGrid {
+    display: grid;
+    grid-template-columns: auto auto
+}
+
+.navGridItemRight {
+    justify-self: end
+}
+
+#navbarImage {
+    filter: invert(var(--image-invert))
+}
+
+.navbarButton {
+    width: 45px;
+    height: 45px;
+    background: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color);
+    border-radius: 999%
+}
+
+.navbarButton:hover {
+    background: var(--tertiary-background-color)
+}
+
+.bigButton {
+    background: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color);
+    padding: 10px
+}
+
+.bigButton:hover {
+    background: var(--tertiary-background-color);
+    color: var(--text-color) !important
+}
+
+.card {
+    background: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color)
+}
+
+.card:hover {
+    background: var(--tertiary-background-color);
+    color: var(--text-color) !important
+}
+
+.sectionTopRightText {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top: none;
+    border-right: none;
+    background-color: var(--fff-background-color)
+}
+
+.cardNoMT {
+    margin-top: -15px
+}
+
+.githubCard {
+    cursor: pointer
+}
+
+.textCard {
+    background: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color);
+    padding: 7px 13px
+}
+
+.svgInvert {
+    fill: var(--text-color)
+}
+
+.leftFloat {
+    float: left;
+    text-align: left
+}
+
+.rightFloat {
+    float: right;
+    text-align: right
+}
+
+.bigButton,
+.card,
+button,
+.textCard {
+    box-shadow: var(--theme-box-shadow)
+}
+
+.rounded-custom {
+    border-radius: 8px;
+}
+
+.rounded-custom-strt {
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px
+}
+
+a:hover{
+  color: var(--text-color)!important;
+}
+
+.navGrid {
+  display: grid;
+  grid-template-columns: auto auto
+}
+
+.navGridItemRight {
+  justify-self: end
+}
+
+#navbarImage {
+  filter: invert(var(--image-invert))
+}
+
+.navbarButton {
+  width: 45px;
+  height: 45px;
+  background: var(--secondary-background-color);
+  border: 1px solid var(--fff-background-color);
+  border-radius: 999%
+}
+
+.navbarButton:hover {
+  background: var(--tertiary-background-color);
+}
+
+.bigButton {
+  background: var(--secondary-background-color);
+  border: 1px solid var(--fff-background-color);
+  padding: 10px
+}
+
+ 
+.wrapper{
+  height: 300px;
+  width: 700px;
+  background: var(--secondary-background-color);
+  border-radius: 15px;
+  padding: 20px 25px 0;
+  transition: height 0.2s ease;
+}
+ 
+.wrapper.active{
+  width: 700px;
+}
+ 
+header h1{
+  color: var(--text-color);
+  font-size: 21px;
+  font-weight: 500;
+}
+ 
+header p{
+  margin-top: 5px;
+  color: var(--text-color);
+  font-size: 16px;
+}
+ 
+.wrapper .form{
+  margin-right: 200px;
+}
+ 
+.form :where(input, button){
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 9px;
+  transition: 0.1s ease;
+}
+ 
+.form input{
+  color: var(--text-color);
+  font-size: 18px;
+  padding: 0 17px;
+}
+ 
+.form input::placeholder{
+  color: var(--text-color);
+}
+ 
+.form button{
+  color: var(--text-color);
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  background: var(--tertiary-background-color);
+}
+ 
+
+.btn {
+  color: var(--text-color);
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  background: var(--tertiary-background-color);
+}
+
+button:hover {
+  background-color: var(--fff-background-color);
+}
+
+.qr-code{
+  opacity: 0;
+  border-radius: 15px;
+  pointer-events: none;
+}
+ 
+.wrapper.active .qr-code{
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+
+.qr-code img{
+  border-radius: 15px;
+  width: 170px;
+}
+
+#info{
+  color: var(--text-color);
+}
